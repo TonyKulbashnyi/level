@@ -1,0 +1,95 @@
+.programmer2
+	background: linear-gradient(to left, rgba(0,204,51,.7), rgba(0,204,51,.5)), url(img/slider/bg.jpg)
+
+
+.manager2
+	background: linear-gradient(to left, rgba(255,206,65,.7), rgba(255,206,65,.9)), url(img/slider/bg.jpg)
+
+
+.sliderPage
+	width: 100%
+	height: 100vh
+
+	&__title
+		display: inline-block
+		margin: 7% 0% 0% 7%
+		padding: 10px
+		text-transform: uppercase
+		font-size: 1.5em
+		border: 0px solid #f72d45 
+		background-color: #f72d45 
+		color: #fff
+		box-shadow: 10px 10px 0px 0px #d5192f
+
+	&__slides
+		position: relative
+		height: 70vh
+		width: 60%
+		list-style-type: none
+		display: flex
+		justify-content: center
+		padding: 0
+		
+
+	&__slider
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+
+	&__slide
+		position: absolute
+		width: 80%
+		height: 100%
+		opacity: 0
+		z-index: 1
+		transition: opacity 1s
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+
+	&__showing
+		opacity: 1
+		z-index: 2
+	
+
+	&__controls
+		
+		width: 50px
+		height: 50px
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		border-radius: 40px
+		border: 2px solid #f72d45
+		outline: none
+
+	&__controls:hover
+		background-color: #d5192f
+
+	&__controls:first-child 
+		background-image: url(img/slider/left-arrow.png) 
+
+	&__controls:last-child 
+		background-image: url(img/slider/right-arrow.png) 
+
+	&__slide:nth-of-type(1)
+		background-image: url(img/slider/1-min.jpg) 
+
+
+	&__slide:nth-of-type(2)
+		background-image: url(img/slider/2-min.jpg)
+
+	&__slide:nth-of-type(3)
+		background-image: url(img/slider/3-min.jpg)
+
+	&__slide:nth-of-type(4)
+		background-image: url(img/slider/4-min.jpg)
+
+	&__slide:nth-of-type(5)
+		background-image: url(img/slider/5-min.jpg)
+
+	&__slide:nth-of-type(6)
+		background-image: url(img/slider/6-min.jpg)
+

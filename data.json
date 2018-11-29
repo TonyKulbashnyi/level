@@ -1,0 +1,282 @@
+[
+	{
+		"id": 1,
+		"login": "tony",
+		"pass": "12345",
+		"type": "prog",
+		"pl": {
+			"c": 1 ,
+			"c_": 1,
+			"delphi": 2,			
+			"java": 3,
+			"js": 4,
+			"php": 2,
+			"python": 1,
+			"ruby": 1,
+			"html": 4
+		},
+		"db": {
+			"sql":2,
+			"oracle":2,
+			"mysql":1
+		},
+		"os": {
+			"android":3,
+			"ios":2,
+			"unix":1,
+			"windows":3
+		}
+	},
+	{
+		"id": 2,
+		"login": "marco",
+		"pass": "54321",
+		"type": "prog",
+		"pl": {
+			"c": 2 ,
+			"c_": 2,
+			"delphi": 2,			
+			"java": 4,
+			"js": 1,
+			"php": 2,
+			"python": 1,
+			"ruby": 2,
+			"html": 2
+		},
+		"db": {
+			"sql":1,
+			"oracle":3,
+			"mysql":1
+		},
+		"os": {
+			"android":1,
+			"ios":4,
+			"unix":1,
+			"windows":2
+		}
+	},
+	{
+		"id": 3,
+		"login": "frenki",
+		"pass": "1111",
+		"type": "prog",
+		"pl": {
+			"c": 4 ,
+			"c_": 3,
+			"delphi": 3,			
+			"java": 1,
+			"js": 3,
+			"php": 2,
+			"python": 3,
+			"ruby": 1,
+			"html": 1
+		},
+		"db": {
+			"sql": 2,
+			"oracle": 2,
+			"mysql": 4
+		},
+		"os": {
+			"android": 2,
+			"ios": 2,
+			"unix": 3,
+			"windows": 1
+		}
+	},
+	{
+		"id": 4,
+		"login": "memphis",
+		"pass": "2222",
+		"type": "prog",
+		"pl": {
+			"c": 4 ,
+			"c_": 4,
+			"delphi": 2,			
+			"java": 1,
+			"js": 1,
+			"php": 3,
+			"python": 3,
+			"ruby": 1,
+			"html": 1
+		},
+		"db": {
+			"sql": 2,
+			"oracle": 2,
+			"mysql": 3
+		},
+		"os": {
+			"android": 4,
+			"ios": 1,
+			"unix": 1,
+			"windows": 1
+		}
+	},
+	{
+		"id": 5,
+		"login": "eden",
+		"pass": "3333",
+		"type": "prog",
+		"pl": {
+			"c": 2 ,
+			"c_": 2,
+			"delphi": 1,			
+			"java": 1,
+			"js": 1,
+			"php": 2,
+			"python": 2,
+			"ruby": 1,
+			"html": 1
+		},
+		"db": {
+			"sql": 4,
+			"oracle": 5,
+			"mysql": 4
+		},
+		"os": {
+			"android": 3,
+			"ios": 1,
+			"unix": 1,
+			"windows": 2
+		}
+	},
+	{
+		"id": 6,
+		"login": "john",
+		"pass": "4444",
+		"type": "prog",
+		"pl": {
+			"c": 2 ,
+			"c_": 3,
+			"delphi": 2,			
+			"java": 3,
+			"js": 2,
+			"php": 1,
+			"python": 4,
+			"ruby": 1,
+			"html": 2
+		},
+		"db": {
+			"sql": 3,
+			"oracle": 2,
+			"mysql": 2
+		},
+		"os": {
+			"android": 2,
+			"ios": 2,
+			"unix": 4,
+			"windows": 2
+		}
+	},
+	{
+		"id": 7,
+		"login": "alex",
+		"pass": "5555",
+		"type": "prog",
+		"pl": {
+			"c": 1,
+			"c_": 3,
+			"delphi": 2,			
+			"java": 4,
+			"js": 2,
+			"php": 3,
+			"python": 3,
+			"ruby": 2,
+			"html": 4
+		},
+		"db": {
+			"sql": 3,
+			"oracle": 3,
+			"mysql": 3
+		},
+		"os": {
+			"android": 2,
+			"ios": 1,
+			"unix": 4,
+			"windows": 2
+		}
+	},
+	{
+		"id": 8,
+		"login": "tobi",
+		"pass": "7777",
+		"type": "prog",
+		"pl": {
+			"c": 1,
+			"c_": 1,
+			"delphi": 3,			
+			"java": 5,
+			"js": 3,
+			"php": 1,
+			"python": 1,
+			"ruby": 2,
+			"html": 3
+		},
+		"db": {
+			"sql": 4,
+			"oracle": 1,
+			"mysql": 4
+		},
+		"os": {
+			"android": 3,
+			"ios": 2,
+			"unix": 2,
+			"windows": 2
+		}
+	},
+	{
+		"id": 9,
+		"login": "anastasia",
+		"pass": "9999",
+		"type": "prog",
+		"pl": {
+			"c": 1,
+			"c_": 1,
+			"delphi": 2,			
+			"java": 2,
+			"js": 3,
+			"php": 1,
+			"python": 1,
+			"ruby": 1,
+			"html": 3
+		},
+		"db": {
+			"sql": 1,
+			"oracle": 1,
+			"mysql": 1
+		},
+		"os": {
+			"android": 3,
+			"ios": 3,
+			"unix": 1,
+			"windows": 3
+		}
+	},
+	{
+		"id": 10,
+		"login": "polina",
+		"pass": "8888",
+		"type": "prog",
+		"pl": {
+			"c": 2,
+			"c_": 3,
+			"delphi": 1,			
+			"java": 4,
+			"js": 2,
+			"php": 1,
+			"python": 1,
+			"ruby": 2,
+			"html": 2
+		},
+		"db": {
+			"sql": 3,
+			"oracle": 2,
+			"mysql": 4
+		},
+		"os": {
+			"android": 4,
+			"ios": 1,
+			"unix": 1,
+			"windows": 3
+		}
+	}
+]

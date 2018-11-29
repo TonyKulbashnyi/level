@@ -1,0 +1,58 @@
+.modal
+	display: none
+	position: fixed
+	z-index: 100
+	// left: 0
+	// top: 0
+	width: 100vw
+	height: 100vh
+	overflow: auto 
+	background-color: rgba(0, 0, 0, 0.9)
+
+	&__contant
+		background-color: #f72d45
+		margin: 10% auto
+		padding: 20px
+		width: auto
+		height: auto
+		// display: flex
+		// align-items: center
+
+	&__form
+		padding: 50px
+		margin: 0 auto
+		text-align: center
+		color: #fff
+
+		span
+			display: block
+		
+		input
+			 padding: 2px
+			 font-size: 15px
+			 border: 2px solid rgba(255, 255, 255, .5)
+			 border-radius: 5px
+			 background: rgba(255, 255, 255, .5)
+			 outline: none
+			 color: #fff
+			 cursor: pointer
+
+		input[type='submit']
+			padding: 10px 20px
+			&:hover
+				padding: 12px 25px
+
+		input[type='radio']
+			padding: 10px
+
+
+	&__element:not(:first-child)
+		margin-top: 20px
+
+	&__close
+		margin-right: 2%
+		float: right
+		color: #fff
+		font-size: 28px
+		font-weight: bold
+		cursor: pointer

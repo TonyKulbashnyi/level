@@ -1,0 +1,120 @@
+$manager_color: #ffce41
+$programmer_color: #00CC33
+
+.main
+	&__rightSection
+		position: fixed
+		top: 35%
+		right: 0
+		width: 2.5em
+		height: 5em
+		border-radius: 100% 0% 0% 100% / 50% 0 0 50%
+		//background-color: $manager_color
+		display: flex
+		justify-content: center
+		align-items: center 
+		font-size: 32px
+		color: #fff
+		z-index: 99
+
+
+		&:hover
+			animation: swing2 0.6s ease
+			animation-iteration-count: 1
+
+	.rightMenu
+		z-index: 99
+		display: none
+		position: fixed
+		right: 0
+		height: 100%
+		width: 20%
+		//background-color: $manager_color
+		justify-content: center
+		align-items: center 
+		flex-direction: column
+
+		&__logo img
+			width: 10em
+
+		&__element 
+			list-style-type: none
+			padding: 10px
+			& a
+				text-transform: uppercase
+				font-size: 18px
+				color: #fff
+
+				&:hover
+					color: #f72d45
+
+
+		&__element ul
+			display: none	
+
+
+		&__authorization
+			display: flex
+			flex-direction: row
+			padding: 10px 20%
+			background-color: #fff
+			border-radius: 10px 
+			font-size: 18px
+
+
+			&:hover
+				background-color: #f72d45
+				cursor: pointer
+
+
+		&__change
+			position: absolute
+			bottom: 5%	
+			color: #fff
+			font-size: 18px
+
+			&:hover
+				color: #f72d45
+
+			& a
+				color: #fff
+				&:hover
+					color: #f72d45
+					
+		&__hide
+			position: absolute
+			top: 40%
+			left: -1.5em
+			width: 3em
+			height: 3em
+			font-size: 32px
+			color: #fff
+			border-radius: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			//background-color: $manager_color
+			cursor: pointer
+
+// #hiddenMenu:hover
+// 	ul
+// 		display: block
+// 		position: relative
+// 		right: 10%
+// 		// z-index: 2
+// 		// margin-top: -15%
+
+// 	li	
+// 		margin: 5px
+// 		list-style-type: none
+
+
+	
+
+// 	ul a
+// 		font-size: 15px	
+// 	// 	// padding: 15px
+// 	// 	padding: 5px
+// 	// 	color: #fff
+// 	// 	font-size: 2px
+// 		//background-color: $manager_color

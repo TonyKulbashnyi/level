@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content=" This site helps young developers to indicate their skills and helps managers find young programmers ." />
+    <meta name="keywords" content="level, skill, programmer, developer, manager, select">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Kulbashnyi Anton">
+    <title>Level</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="project.css">
+
+	
+    
+</head>
+<body>
+	<!-- ************start************ -->
+<section class="start">
+	<div class="start__manager">
+		<a href="#" onclick='show_manager()'>
+			<div class="start__info">
+				<img src="img/start/manager_icon.png" alt="manager">
+				<p>are you</p>
+				<p><strong>manager?</strong></p>
+			</div>
+		</a>
+	</div>
+	<div class="start__logo">
+		<img src="img/start/start_logo.png" alt="logo">
+	</div>	
+	<div class="start__programmer">
+		<a href="#" onclick='show_programmer()'>
+			<div class="start__info">
+				<img src="img/start/programmer_icon.png" alt="programmer">
+				<p>are you</p>
+				<p><strong>programmer?</strong></p>
+			</div>
+		</a>
+	</div>
+</section>
+
+
+<main class="main hidden ">
+	<!-- ************header************ -->
+	<header class="header main__header" >
+		<div class="header__logo">
+			<a href="">
+				<img src="img/logo.png" alt="logo">
+			</a>
+		</div>
+		<nav class="header__nav">
+			<ul>
+				<li class="header__element">
+					<a href="#aboutUs" id="a1_aboutUs">
+						about it
+						<i class="fas fa-angle-down"></i>
+					</a>
+					<ul class="header__submenu">
+				        <li>
+				        	<a href="">second lvl</a>
+				        </li>
+				        <li>
+				        	<a href="">second lvl
+				        		<i class="fas fa-angle-down"></i>
+				        	</a>
+				          	<ul class="header__submenu">
+					            <li>
+					            	<a href="">third lvl</a>
+
+					            </li>
+					            <li>
+					            	<a href="">third lvl</a>
+					            </li>
+					            <li>
+					            	<a href="">third lvl
+									<i class="fas fa-angle-down"></i></a>
+					            	<ul class="header__submenu">
+					            		<li>
+								        	<a href="">fourth lvl</a>
+								        </li>
+					            		<li>
+								        	<a href="">fourth lvl</a>
+								        </li>								        
+					            	</ul>					            	
+					            </li>
+				          	</ul>
+				      	</li>
+				        <li>
+				        	<a href="">second lvl</a>
+				        </li>
+					</ul>
+				</li>
+				
+				<li class="header__element">
+					<a href="#hiw" id="a1_hiw">
+						how it work
+					</a>
+				</li>
+				
+				<li class="header__element" id="dropList">
+					<a href="#skills">
+						make your choice
+					</a>
+				</li>
+				<li class="header__element">
+					<a href="#contact" id="a1_contact">
+						contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__authorization">
+			<div class="header__signIn">
+				sign in
+			</div>
+			<div class="header__signUp" onmouseover="hover()" onmouseout="hover_out()">
+				sign up
+			</div>
+		</div>
+	</header>
+	<!-- ************RightMenu************ -->
+	<div class="main__rightSection" id="rightSection">
+		<i class="fas fa-bars"></i>
+	</div>
+	<aside class="main__rightMenu rightMenu" id="rightMenu">
+		<div class="rightMenu__logo">
+			<img src="img/logo.png" alt="logo">
+		</div>
+		<nav class="rightMenu__nav">
+			<ul>
+				<li class="rightMenu__element">
+					<a href="#aboutUs" id="a2_aboutUs">
+						about it
+					</a>
+				</li>
+				
+				<li class="rightMenu__element">
+					<a href="#hiw" id="a2_hiw">
+						how it work
+					</a>
+				</li>
+				
+				<li class="rightMenu__element" id="hiddenMenu">
+					<a href="#skills">
+						make your choice
+					</a>
+				</li>
+				
+				<li class="rightMenu__element">
+					<a href="#contact" id="a2_contact">
+						contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="rightMenu__authorization">
+			<span>
+				sign in
+			</span>	
+		</div>
+		<div class="rightMenu__change">
+			<a href="">
+				change direction?
+			</a>	
+		</div>
+		<div class="rightMenu__hide" id="rightMenu__hide">
+			<i class="fas fa-chevron-right"></i>
+		</div>
+
+	</aside>
+	<!-- ************modalbox************ -->
+	<div class="main__modal modal" id="modal">
+		
+		<div class="modal__contant">
+			<span class="modal__close">
+				<i class="fas fa-times"></i>
+			</span>
+			<form name="registration" action="mailto:tony.k96@ukr.net" method="POST" class="modal__form">
+				<div class="modal__element">
+			 		<label>
+			 			<span>
+			 				Your login
+			 			</span>
+			 			<input type="text">
+					</label>
+				</div>
+				<div class="modal__element">
+					<label>
+			 			<span>Your email</span>
+			 			<input type="email">
+					</label>
+				</div>
+				<div class="modal__element">
+					<label>
+			 			<span>Your password</span>
+			 			<input type="password">
+					</label>
+				</div>
+				<div class="modal__element">
+					<label>
+			 			<input type="radio" name="type" value="prog" checked> programmer
+					</label>
+					<label>
+						<input type="radio" name="type" value="manager"> manager
+					</label>
+				</div>
+				<div class="modal__element">
+					<input type="submit" value="submit">
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
+	<!-- ************aboutUS************ -->
+	<section class="main__aboutUs aboutUs" id="aboutUs"> <!-- hidden out -->
+		<a href="#" >
+			<h1 class="aboutUs__title">
+				level - your window to the world of IT technologies
+			</h1>
+		</a>
+		<p class="aboutUs__text">
+			Over the past 10 years, the IT-sector has received rapid development and won the first place in popularity in the labor market of Ukraine. It gave the opportunity to appear and develop such IT specialties: programmer, webmaster, web designer, project manager, security administrator and many others. Today, this area of activity holds its leading position, thereby attracting many applicants, students and specialists for cooperation.
+			In IT areas, most often come professionals who are very inspired by their profession. It brings both profit and career advancement, but for this specialist you must constantly be involved in the work process.
+		</p>
+		<a href="#slider" id="a_slider">
+			<img src="img/scroll_white.png" alt="scroll" class="aboutUs__scroll">
+		</a>
+	</section>
+		<!-- ************slider************ -->
+	<section class="main__sliderPage sliderPage hidden" id="slider"> <!-- hidden out -->
+
+		<h2 class="sliderPage__title">
+			best words about programming
+		</h2>
+		<div class="sliderPage__slider">
+			<div class="sliderPage__controls" id="previous">
+			</div>
+			<ul class="sliderPage__slides">
+				<li class="sliderPage__slide sliderPage__showing"></li>
+				<li class="sliderPage__slide"></li>
+				<li class="sliderPage__slide"></li>
+				<li class="sliderPage__slide"></li>
+				<li class="sliderPage__slide"></li>
+				<li class="sliderPage__slide"></li>
+				
+			</ul>
+			<div class="sliderPage__controls" id="next">
+			</div>
+		</div>
+		
+	</section>
+	<!-- ************gallery************ -->
+	<section class="main__gallery gallery hidden" id="hiw">			<!-- hidden out -->
+		<h2 class="gallery__title">
+			future is exciting with level
+		</h2>
+		<div class="gallery__box">
+ 			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div>
+			<div class="gallery__item" tabindex="0"></div> 
+
+		</div>
+	</section>
+
+	<!-- ************сhoice manager************ -->
+	<section class="main__choice choice hidden">
+
+		<h2 class="choice__title">
+			Here you can review the submitted candidates.
+		</h2>
+		<div class="choice__box">
+			<div class="choice__filters">
+				
+				<input type="text" class="choice__filter choice__search" id="choice__search" placeholder="Search candidate">
+				
+				<div class="choice__filter" id="full_list">
+					default Rating
+				</div>
+				<div class="choice__filter" id="pl_top">
+					Program Languages Top
+				</div>
+				<div class="choice__filter" id="db_top">
+					Data Base Top
+				</div>
+				<div class="choice__filter" id="os_top">
+					Operating Systems Top
+				</div>				
+				<!-- <div class="choice__filter">
+					Best in all
+				</div>
+				<div class="choice__filter">
+					Reverse rating
+				</div> -->
+				<div class="choice__filter" id="fe_top">	
+					Top FrontEnd
+				</div>	
+				<div class="choice__filter" id="html_value">
+					<p>HTML filter</p>
+					<input type="range" min="1" max="5" step="1"  oninput="htmlFilter(this.value)" onchange="htmlFilter(this.value)">
+				</div>								
+			</div>
+			<div class="choice__candidates" id="search__output"></div>		
+			<div class="choice__candidates" id="candidates">
+			</div>			
+			<div class="choice__candidates" id="choiceFE"></div>
+			<div class="choice__candidates" id="choiceOS"></div>
+			<div class="choice__candidates" id="choiceDB"></div>
+			<div class="choice__candidates" id="choicePL"></div>
+
+
+
+		</div>
+	</section>
+		<!-- ************skills prog************ -->
+	<section class="main__skills skills hidden" id="skills">		<!-- hidden out -->
+		<h2 class="skills__title">
+			what are you skills?
+		</h2>
+		<div class="skills__box">
+			<div class="skills__directions">
+
+				<div class="skills__head" id="skill_h1">
+					<span>programming languages </span>
+					<i class="fas fa-plus fa-plus1"></i>
+					<i class="fas fa-times fa-times1"></i>
+				</div>
+
+				<div class="skills__body" id="skill_b1" style="display: none">
+					<div class="skills__part">
+						<span>C#</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="c#" id="c#-5" hidden>
+							<label for="c#-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="c#" id="c#-4" hidden>
+							<label for="c#-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c#" id="c#-3" hidden>
+							<label for="c#-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c#" id="c#-2" hidden>
+							<label for="c#-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c#" id="c#-1" hidden checked>
+							<label for="c#-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+
+					<div class="skills__part">
+						<span>C/C++</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="c++" id="c++-5" hidden>
+							<label for="c++-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="c++" id="c++-4" hidden>
+							<label for="c++-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c++" id="c++-3" hidden>
+							<label for="c++-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c++" id="c++-2" hidden>
+							<label for="c++-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="c++" id="c++-1" hidden checked>
+							<label for="c++-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+
+
+					<div class="skills__part">
+						<span>Delphi</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="delph" id="delph-5" hidden>
+							<label for="delph-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="delph" id="delph-4" hidden>
+							<label for="delph-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="delph" id="delph-3" hidden>
+							<label for="delph-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="delph" id="delph-2" hidden>
+							<label for="delph-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="delph" id="delph-1" hidden checked>
+							<label for="delph-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+
+					<div class="skills__part">
+						<span>Java</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="java" id="java-5" hidden>
+							<label for="java-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="java" id="java-4" hidden>
+							<label for="java-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="java" id="java-3" hidden>
+							<label for="java-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="java" id="java-2" hidden>
+							<label for="java-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="java" id="java-1" hidden checked>
+							<label for="java-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+
+					<div class="skills__part">
+						<span>JavaScript</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="js" id="js-5" hidden>
+							<label for="js-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="js" id="js-4" hidden>
+							<label for="js-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="js" id="js-3" hidden>
+							<label for="js-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="js" id="js-2" hidden>
+							<label for="js-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="js" id="js-1" hidden checked>
+							<label for="js-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+
+
+					<div class="skills__part">
+						<span>PHP</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="php" id="php-5" hidden>
+							<label for="php-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="php" id="php-4" hidden>
+							<label for="php-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="php" id="php-3" hidden>
+							<label for="php-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="php" id="php-2" hidden>
+							<label for="php-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="php" id="php-1" hidden checked>
+							<label for="php-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+					<div class="skills__part">
+						<span>Python</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="python" id="python-5" hidden>
+							<label for="python-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="python" id="python-4" hidden>
+							<label for="python-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="python" id="python-3" hidden>
+							<label for="python-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="python" id="python-2" hidden>
+							<label for="python-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="python" id="python-1" hidden checked>
+							<label for="python-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+					<div class="skills__part">
+						<span>Ruby</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="ruby" id="ruby-5" hidden>
+							<label for="ruby-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="ruby" id="ruby-4" hidden>
+							<label for="ruby-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ruby" id="ruby-3" hidden>
+							<label for="ruby-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ruby" id="ruby-2" hidden>
+							<label for="ruby-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ruby" id="ruby-1" hidden checked>
+							<label for="ruby-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+					<div class="skills__part">
+						<span>HTML5/CSS3</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="html" id="html-5" hidden>
+							<label for="html-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="html" id="html-4" hidden>
+							<label for="html-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="html" id="html-3" hidden>
+							<label for="html-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="html" id="html-2" hidden>
+							<label for="html-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="html" id="html-1" hidden checked>
+							<label for="html-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="skills__head" id="skill_h2" >
+					<span>Data Base </span>
+					<i class="fas fa-plus fa-plus2"></i>
+					<i class="fas fa-times fa-times2"></i>
+				</div>
+				<div class="skills__body hidden" id="skill_b2"  style="display: none">
+					<div class="skills__part">
+						<span> SQLServer</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="sqlserver" id="sqlserver-5" hidden>
+							<label for="sqlserver-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="sqlserver" id="sqlserver-4" hidden>
+							<label for="sqlserver-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="sqlserver" id="sqlserver-3" hidden>
+							<label for="sqlserver-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="sqlserver" id="sqlserver-2" hidden>
+							<label for="sqlserver-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="sqlserver" id="sqlserver-1" hidden checked>
+							<label for="sqlserver-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>	
+					<div class="skills__part">
+						<span>Oracle</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="oracle" id="oracle-5" hidden>
+							<label for="oracle-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="oracle" id="oracle-4" hidden>
+							<label for="oracle-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="oracle" id="oracle-3" hidden>
+							<label for="oracle-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="oracle" id="oracle-2" hidden>
+							<label for="oracle-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="oracle" id="oracle-1" hidden checked>
+							<label for="oracle-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>	
+					<div class="skills__part">
+						<span>MySQL</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="mysql" id="mysql-5" hidden>
+							<label for="mysql-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="mysql" id="mysql-4" hidden>
+							<label for="mysql-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="mysql" id="mysql-3" hidden>
+							<label for="mysql-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="mysql" id="mysql-2" hidden>
+							<label for="mysql-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="mysql" id="mysql-1" hidden checked>
+							<label for="mysql-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>														
+				</div>
+
+				<div class="skills__head" id="skill_h3">
+					<span>OS </span>
+					<i class="fas fa-plus fa-plus3"></i>
+					<i class="fas fa-times fa-times3"></i>
+				</div>
+				<div class="skills__body hidden" id="skill_b3"  style="display: none">
+					<div class="skills__part">
+						<span>Android</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="android" id="android-5" hidden>
+							<label for="android-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="android" id="android-4" hidden>
+							<label for="android-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="android" id="android-3" hidden>
+							<label for="android-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="android" id="android-2" hidden>
+							<label for="android-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="android" id="android-1" hidden checked>
+							<label for="android-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>	
+					<div class="skills__part">
+						<span>iOS</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="ios" id="ios-5" hidden>
+							<label for="ios-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="ios" id="ios-4" hidden>
+							<label for="ios-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ios" id="ios-3" hidden>
+							<label for="ios-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ios" id="ios-2" hidden>
+							<label for="ios-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="ios" id="ios-1" hidden checked>
+							<label for="ios-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>	
+					<div class="skills__part">
+						<span>UNIX/Linux</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="linux" id="linux-5" hidden>
+							<label for="linux-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="linux" id="linux-4" hidden>
+							<label for="linux-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="linux" id="linux-3" hidden>
+							<label for="linux-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="linux" id="linux-2" hidden>
+							<label for="linux-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="linux" id="linux-1" hidden checked>
+							<label for="linux-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>	
+					<div class="skills__part">
+						<span>Windows</span>
+						<div class="skills__stars direction">
+							<input type="radio" name="wind" id="wind-5" hidden>
+							<label for="wind-5">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" name="wind" id="wind-4" hidden>
+							<label for="wind-4">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="wind" id="wind-3" hidden>
+							<label for="wind-3">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="wind" id="wind-2" hidden>
+							<label for="wind-2">
+								<i class="far fa-star"></i>
+						 		<i class="fas fa-star"></i>
+						  </label>
+							<input type="radio" name="wind" id="wind-1" hidden checked>
+							<label for="wind-1">
+								<i class="fas fa-star"></i>
+						  </label>
+						</div>
+					</div>													
+				</div>
+			</div>
+
+
+
+			<div class="skills__manual">
+				<h3>
+					about marks
+				</h3>
+				<p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+
+					<span> 
+						-  expert in this
+					</span>
+				</p>
+				<p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>					
+					<i class="far fa-star"></i>
+					<span> 
+						- Experienced developer
+					</span>
+				</p>
+				<p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span> 
+						- need more practice 
+					</span>
+				</p>
+				<p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span> 
+						- I can solve simple puzzles 
+					</span>
+				</p>
+				<p>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+
+					<span>
+					 - First step in this
+					</span>
+				</p>
+			</div>			
+		</div>
+
+	</section>
+		<!-- ************contact************ -->
+	<footer class="main__contact contact hidden" id="contact">		<!-- hidden out -->
+
+		<div class="contact__info">
+			<ul>
+				<li>
+					<a href="#" target="_blank">			
+						<i class="fas fa-home"></i> Irpin, Antonov str.
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fas fa-phone-square"></i> tel: (099) 034 55 62
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="far fa-envelope"></i> level@gmail.com
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/profile.php?id=100009540698056&ref=bookmarks" target="_blank">
+						<i class="fab fa-facebook-square"></i> level
+					</a>
+				</li>
+				<li>
+					<a href="https://t.me/tony2night" target="_blank">	
+						<i class="fab fa-telegram"></i> @level
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/kulbashnyi.a/" target="_blank">
+						<i class="fab fa-instagram"></i> @level
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="contact__map">
+		</div>
+	</footer>
+
+</main>
+
+
+<script src="data.json"></script>
+<script src="project.js"></script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBkPH_6a-e31XF-knO5k2ShlbEslO_iv8&callback=initMap">
+    </script>
+</body>
+</html>

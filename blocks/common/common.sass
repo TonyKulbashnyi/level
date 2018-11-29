@@ -1,0 +1,62 @@
+$manager_color: #ffce41
+$programmer_color: #00CC33
+
+
+body
+	margin: 0
+	padding: 0
+	font-family: 'Titillium Web', sans-serif
+	list-style-type:none
+
+
+a
+	text-decoration: none
+
+.hidden
+	display: none
+
+.showBlock
+	display: block 
+
+.showFlex
+	display: flex
+
+.borderRight_mn
+	border-right: 2px solid $manager_color
+
+	& a:hover
+		color: $manager_color
+
+.borderRight_pr
+	border-right: 2px solid $programmer_color
+
+	& a:hover
+		color: $programmer_color
+
+.border_mn
+	border: 2px solid $manager_color
+	&:hover
+		background-color: $manager_color
+
+.border_pr
+	border: 2px solid $programmer_color
+	
+	&:hover
+		background-color: $programmer_color
+
+.bg_mn
+	background-color: $manager_color	
+	
+	&:hover ~ .header__signUp			
+		background-color: $manager_color
+
+	&:hover li
+		background-color: $manager_color
+
+.bg_pr
+	background-color: $programmer_color	
+	&:hover ~ .header__signUp			
+		background-color: $programmer_color
+
+	&:hover li
+		background-color: $programmer_color
