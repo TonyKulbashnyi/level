@@ -1,3 +1,6 @@
+/*
+hide start window for show main site content
+*/
 function hide_start() {
 	var start = document.querySelector('.start');
 	start.style.display='none';
@@ -5,7 +8,9 @@ function hide_start() {
 
 
 
-
+/*
+function to add classes for manager view
+*/
 function show_manager() {
 
 	const main = document.querySelector('.main');
@@ -13,10 +18,16 @@ function show_manager() {
 	const slider_manager = document.querySelector('.sliderPage');
 	const gallery_manager = document.querySelector('.gallery');
 	const contact_manager = document.querySelector('.contact__info');
+	
+
+
 	aboutUs_manager.classList.add('manager1');
 	slider_manager.classList.add('manager2');
 	gallery_manager.classList.add('manager3');
 	contact_manager.classList.add('manager4');
+
+
+	document.getElementById('dif').href = "#choice";
 
 	main.classList.remove('hidden');
 	hide_start();
@@ -65,6 +76,9 @@ function show_manager() {
 	}
 }
 
+/*
+function to add classes for programmer view
+*/
 function show_programmer() {
 
 	const main = document.querySelector('.main');
@@ -72,6 +86,10 @@ function show_programmer() {
 	const slider_programmer = document.querySelector('.sliderPage');
 	const gallery_programmer = document.querySelector('.gallery');
 	const contact_programmer = document.querySelector('.contact__info');
+
+	document.getElementById('dif').href = "#skills";
+
+	
 	aboutUs_programmer.classList.add('programmer1');
 	slider_programmer.classList.add('programmer2');
 	gallery_programmer.classList.add('programmer3');
@@ -79,8 +97,10 @@ function show_programmer() {
 
 	main.classList.remove('hidden');
 	hide_start();
+
 	//design depending choice block 
 	//border-color
+	
 	var header__element = document.getElementsByClassName('header__element');
 
 	for(var i = 0; i < header__element.length; i++) {
@@ -102,6 +122,7 @@ function show_programmer() {
 	/* 
 	replacement block for make your choice for the proger
 	*/
+
 	var a1_myc = document.getElementById('dropList');
 	var a2_myc = document.getElementById('hiddenMenu');
 

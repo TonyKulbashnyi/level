@@ -8,7 +8,7 @@ aside.onclick = function() {
 	document.getElementById('rightMenu').style.display = 'flex'
 }
 
-var rightMenu__hide = document.getElementById('rightMenu__hide')
+var rightMenu__hide = document.getElementById('rightMenu')
 
 rightMenu__hide.onclick = function() {
 	document.getElementById('rightMenu').style.display = 'none'

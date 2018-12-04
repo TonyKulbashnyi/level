@@ -144,7 +144,7 @@
 				</li>
 				
 				<li class="rightMenu__element" id="hiddenMenu">
-					<a href="#skills">
+					<a id='dif'>
 						make your choice
 					</a>
 				</li>
@@ -216,63 +216,17 @@
 		
 	</div>
 	<!-- ************aboutUS************ -->
-	<section class="main__aboutUs aboutUs" id="aboutUs"> <!-- hidden out -->
-		<a href="#" >
-			<h1 class="aboutUs__title">
-				level - your window to the world of IT technologies
-			</h1>
-		</a>
-		<p class="aboutUs__text">
-			Over the past 10 years, the IT-sector has received rapid development and won the first place in popularity in the labor market of Ukraine. It gave the opportunity to appear and develop such IT specialties: programmer, webmaster, web designer, project manager, security administrator and many others. Today, this area of activity holds its leading position, thereby attracting many applicants, students and specialists for cooperation.
-			In IT areas, most often come professionals who are very inspired by their profession. It brings both profit and career advancement, but for this specialist you must constantly be involved in the work process.
-		</p>
-		<a href="#slider" id="a_slider">
-			<img src="img/scroll_white.png" alt="scroll" class="aboutUs__scroll">
-		</a>
+	<section class="main__aboutUs aboutUs" id="aboutUs"> 
 	</section>
 		<!-- ************slider************ -->
-	<section class="main__sliderPage sliderPage hidden" id="slider"> <!-- hidden out -->
-
-		<h2 class="sliderPage__title">
-			best words about programming
-		</h2>
-		<div class="sliderPage__slider">
-			<div class="sliderPage__controls" id="previous">
-			</div>
-			<ul class="sliderPage__slides">
-				<li class="sliderPage__slide sliderPage__showing"></li>
-				<li class="sliderPage__slide"></li>
-				<li class="sliderPage__slide"></li>
-				<li class="sliderPage__slide"></li>
-				<li class="sliderPage__slide"></li>
-				<li class="sliderPage__slide"></li>
-				
-			</ul>
-			<div class="sliderPage__controls" id="next">
-			</div>
-		</div>
-		
+	<section class="main__sliderPage sliderPage hidden" id="slider"> 
 	</section>
 	<!-- ************gallery************ -->
-	<section class="main__gallery gallery hidden" id="hiw">			<!-- hidden out -->
-		<h2 class="gallery__title">
-			future is exciting with level
-		</h2>
-		<div class="gallery__box">
- 			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div>
-			<div class="gallery__item" tabindex="0"></div> 
-
-		</div>
+	<section class="main__gallery gallery hidden" id="hiw">			
 	</section>
 
 	<!-- ************сhoice manager************ -->
-	<section class="main__choice choice hidden">
+	<section class="main__choice choice hidden" id='choice'>
 
 		<h2 class="choice__title">
 			Here you can review the submitted candidates.
@@ -283,7 +237,7 @@
 				<input type="text" class="choice__filter choice__search" id="choice__search" placeholder="Search candidate">
 				
 				<div class="choice__filter" id="full_list">
-					default Rating
+					default list
 				</div>
 				<div class="choice__filter" id="pl_top">
 					Program Languages Top
@@ -294,20 +248,16 @@
 				<div class="choice__filter" id="os_top">
 					Operating Systems Top
 				</div>				
-				<!-- <div class="choice__filter">
-					Best in all
-				</div>
-				<div class="choice__filter">
-					Reverse rating
-				</div> -->
+
 				<div class="choice__filter" id="fe_top">	
-					Top FrontEnd
+					FrontEnd Top 
 				</div>	
 				<div class="choice__filter" id="html_value">
 					<p>HTML filter</p>
-					<input type="range" min="1" max="5" step="1"  oninput="htmlFilter(this.value)" onchange="htmlFilter(this.value)">
+					<input type="range" min="1" max="5" step="1" id="filterHTML">
 				</div>								
 			</div>
+			
 			<div class="choice__candidates" id="search__output"></div>		
 			<div class="choice__candidates" id="candidates">
 			</div>			
@@ -315,13 +265,24 @@
 			<div class="choice__candidates" id="choiceOS"></div>
 			<div class="choice__candidates" id="choiceDB"></div>
 			<div class="choice__candidates" id="choicePL"></div>
+			<div class="choice__candidates" id="resultFilter"></div>
+			<div class="choice__candidates" id="pagination">
+				<a id="btn_prev">
+					<i class="fas fa-chevron-left"></i>
+				</a>
+				<span id="page">Page 1</span>
+				<a id="btn_next">
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+
 
 
 
 		</div>
 	</section>
 		<!-- ************skills prog************ -->
-	<section class="main__skills skills hidden" id="skills">		<!-- hidden out -->
+	<section class="main__skills skills hidden" id="skills">
 		<h2 class="skills__title">
 			what are you skills?
 		</h2>
@@ -889,44 +850,7 @@
 
 	</section>
 		<!-- ************contact************ -->
-	<footer class="main__contact contact hidden" id="contact">		<!-- hidden out -->
-
-		<div class="contact__info">
-			<ul>
-				<li>
-					<a href="#" target="_blank">			
-						<i class="fas fa-home"></i> Irpin, Antonov str.
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<i class="fas fa-phone-square"></i> tel: (099) 034 55 62
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<i class="far fa-envelope"></i> level@gmail.com
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/profile.php?id=100009540698056&ref=bookmarks" target="_blank">
-						<i class="fab fa-facebook-square"></i> level
-					</a>
-				</li>
-				<li>
-					<a href="https://t.me/tony2night" target="_blank">	
-						<i class="fab fa-telegram"></i> @level
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/kulbashnyi.a/" target="_blank">
-						<i class="fab fa-instagram"></i> @level
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="contact__map">
-		</div>
+	<footer class="main__contact contact hidden" id="contact">		
 	</footer>
 
 </main>
@@ -936,6 +860,6 @@
 <script src="project.js"></script>
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBkPH_6a-e31XF-knO5k2ShlbEslO_iv8&callback=initMap">
-    </script>
+ </script>
 </body>
 </html>

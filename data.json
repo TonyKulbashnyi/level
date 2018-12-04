@@ -278,5 +278,145 @@
 			"unix": 1,
 			"windows": 3
 		}
+	},
+	{
+		"id": 11,
+		"login": "sony",
+		"pass": "1111",
+		"type": "prog",
+		"pl": {
+			"c": 1,
+			"c_": 1,
+			"delphi": 1,			
+			"java": 3,
+			"js": 2,
+			"php": 2,
+			"python": 2,
+			"ruby": 1,
+			"html": 3
+		},
+		"db": {
+			"sql": 1,
+			"oracle": 1,
+			"mysql": 1
+		},
+		"os": {
+			"android": 2,
+			"ios": 1,
+			"unix": 2,
+			"windows": 3
+		}
+	},
+	{
+		"id": 12,
+		"login": "albert",
+		"pass": "2222",
+		"type": "prog",
+		"pl": {
+			"c": 3,
+			"c_": 3,
+			"delphi": 1,			
+			"java": 3,
+			"js": 1,
+			"php": 1,
+			"python": 1,
+			"ruby": 1,
+			"html": 1
+		},
+		"db": {
+			"sql": 2,
+			"oracle": 2,
+			"mysql": 2
+		},
+		"os": {
+			"android": 1,
+			"ios": 1,
+			"unix": 1,
+			"windows": 1
+		}
+	},
+	{
+		"id": 13,
+		"login": "kylian",
+		"pass": "3123",
+		"type": "prog",
+		"pl": {
+			"c": 2,
+			"c_": 2,
+			"delphi": 2,			
+			"java": 4,
+			"js": 3,
+			"php": 5,
+			"python": 1,
+			"ruby": 4,
+			"html": 3
+		},
+		"db": {
+			"sql": 3,
+			"oracle": 5,
+			"mysql": 4
+		},
+		"os": {
+			"android": 4,
+			"ios": 4,
+			"unix": 2,
+			"windows": 1
+		}
+	},
+	{
+		"id": 14,
+		"login": "pol",
+		"pass": "3125",
+		"type": "prog",
+		"pl": {
+			"c": 2,
+			"c_": 3,
+			"delphi": 4,			
+			"java": 1,
+			"js": 2,
+			"php": 1,
+			"python": 4,
+			"ruby": 4,
+			"html": 2
+		},
+		"db": {
+			"sql": 1,
+			"oracle": 3,
+			"mysql": 1
+		},
+		"os": {
+			"android": 2,
+			"ios": 5,
+			"unix": 2,
+			"windows": 2
+		}
+	},
+	{
+		"id": 15,
+		"login": "denis",
+		"pass": "6666",
+		"type": "prog",
+		"pl": {
+			"c": 1,
+			"c_": 1,
+			"delphi": 1,			
+			"java": 3,
+			"js": 5,
+			"php": 4,
+			"python": 1,
+			"ruby": 1,
+			"html": 5
+		},
+		"db": {
+			"sql": 3,
+			"oracle": 5,
+			"mysql": 4
+		},
+		"os": {
+			"android": 1,
+			"ios": 1,
+			"unix": 1,
+			"windows": 1
+		}
 	}
 ]
